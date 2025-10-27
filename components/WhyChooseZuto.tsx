@@ -39,17 +39,16 @@ export default function WhyChooseZuto() {
                             by="word"
                             className="inline-block"
                         >
-                            Not Just a Rental Platform —&nbsp;
+                            Not Just
+                            a Rental Platform —&nbsp;
                         </TextAnimate>
-                        <Highlighter action="underline" color="#f59e0b">
-                            <TextAnimate
-                                animation="blurInUp"
-                                by="word"
-                                className="text-amber-500 inline-block"
-                            >
-                                A Community of Riders
-                            </TextAnimate>
-                        </Highlighter>
+                        <TextAnimate
+                            animation="blurInUp"
+                            by="word"
+                            className=" inline-block"
+                        >
+                            A Community of Riders
+                        </TextAnimate>
                         .
                     </h3>
                     <p className="text-gray-500 pt-8 md:text-2xl text-xl mb-6 leading-relaxed">

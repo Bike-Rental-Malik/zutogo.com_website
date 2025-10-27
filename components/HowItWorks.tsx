@@ -117,15 +117,14 @@ export default function HowItWorks() {
                     >
                         Whether you're renting or listing —&nbsp;
                     </TextAnimate>
-                    <Highlighter action="underline" color="#f59e0b">
-                        <TextAnimate
-                            animation="blurInUp"
-                            by="word"
-                            className=" inline-block"
-                        >
-                            Zuto makes it effortless.
-                        </TextAnimate>
-                    </Highlighter>
+
+                    <TextAnimate
+                        animation="blurInUp"
+                        by="word"
+                        className=" inline-block"
+                    >
+                        Zuto makes it effortless.
+                    </TextAnimate>
                 </p>
             </div>
 

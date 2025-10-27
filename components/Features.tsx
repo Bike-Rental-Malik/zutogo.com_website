@@ -57,15 +57,14 @@ export default function FeaturesSection() {
                 </TextAnimate>
             </h2>
             <p className="md:text-2xl text-xl text-gray-500 text-center mb-10">
-                <Highlighter action="underline" color="#f59e0b">
-                    <TextAnimate
-                        animation="blurInUp"
-                        by="word"
-                        className=" inline-block"
-                    >
-                        Zuto gives you total control&nbsp;
-                    </TextAnimate>
-                </Highlighter>
+                <TextAnimate
+                    animation="blurInUp"
+                    by="word"
+                    className=" inline-block"
+                >
+                    Zuto gives you total control&nbsp;
+                </TextAnimate>
+
                 <TextAnimate
                     animation="blurInUp"
                     by="word"
@@ -74,15 +73,14 @@ export default function FeaturesSection() {
                     — from booking your ride to returning it safely. Our
                     platform is designed for
                 </TextAnimate>
-                <Highlighter action="underline" color="#f59e0b">
-                    <TextAnimate
-                        animation="blurInUp"
-                        by="word"
-                        className=" inline-block"
-                    >
-                        simplicity, trust, and freedom.
-                    </TextAnimate>
-                </Highlighter>
+
+                <TextAnimate
+                    animation="blurInUp"
+                    by="word"
+                    className=" inline-block"
+                >
+                    simplicity, trust, and freedom.
+                </TextAnimate>
             </p>
 
             <div className="grid md:grid-cols-2 pt-8 gap-16 items-center">
@@ -103,7 +101,7 @@ export default function FeaturesSection() {
                             <h4 className="text-3xl font-bold text-gray-900 mb-2">
                                 Verified Owners & Bikes
                             </h4>
-                            <p className="text-gray-600 text-xl">
+                            <p className="text-gray-600 text-xl border-amber-500 border-t-2">
                                 Every bike and owner goes through identity and
                                 document verification to ensure your safety.
                             </p>
@@ -113,7 +111,7 @@ export default function FeaturesSection() {
                             <h4 className="text-3xl font-bold text-gray-900 mb-2">
                                 Secure Payments
                             </h4>
-                            <p className="text-gray-600 text-xl">
+                            <p className="text-gray-600 text-xl border-amber-500 border-t-2">
                                 Book confidently with our in-app wallet and
                                 enjoy instant refunds on cancellations.
                             </p>
@@ -123,7 +121,7 @@ export default function FeaturesSection() {
                             <h4 className="text-3xl font-bold text-gray-900 mb-2">
                                 Real-time Tracking
                             </h4>
-                            <p className="text-gray-600 text-xl">
+                            <p className="text-gray-600 text-xl border-amber-500 border-t-2">
                                 Stay informed with GPS tracking and live ride
                                 updates directly in the app.
                             </p>
@@ -133,7 +131,7 @@ export default function FeaturesSection() {
                             <h4 className="text-3xl font-bold text-gray-900 mb-2">
                                 Transparent Pricing
                             </h4>
-                            <p className="text-gray-600 text-xl">
+                            <p className="text-gray-600 text-xl border-amber-500 border-t-2">
                                 No hidden charges. Pay only for the time you
                                 ride — nothing more.
                             </p>
@@ -143,7 +141,7 @@ export default function FeaturesSection() {
                             <h4 className="text-3xl font-bold text-gray-900 mb-2">
                                 Smart Suggestions
                             </h4>
-                            <p className="text-gray-600 text-xl">
+                            <p className="text-gray-600 text-xl border-amber-500 border-t-2">
                                 Get personalized ride recommendations based on
                                 your habits and travel history.
                             </p>
@@ -153,7 +151,7 @@ export default function FeaturesSection() {
                             <h4 className="text-3xl font-bold text-gray-900 mb-2">
                                 Extend or Cancel Anytime
                             </h4>
-                            <p className="text-gray-600 text-xl">
+                            <p className="text-gray-600 text-xl border-amber-500 border-t-2">
                                 Need more time? Extend your booking in one tap —
                                 or cancel with a full refund before your ride
                                 starts.
@@ -164,7 +162,7 @@ export default function FeaturesSection() {
                             <h4 className="text-3xl font-bold text-gray-900 mb-2">
                                 Easy Rental Process
                             </h4>
-                            <p className="text-gray-600 text-xl">
+                            <p className="text-gray-600 text-xl border-amber-500 border-t-2">
                                 A smooth 3-step rental experience — find, book,
                                 and ride without any hassle.
                             </p>
@@ -174,7 +172,7 @@ export default function FeaturesSection() {
                             <h4 className="text-3xl font-bold text-gray-900 mb-2">
                                 24×7 Support
                             </h4>
-                            <p className="text-gray-600 text-xl">
+                            <p className="text-gray-600 text-xl border-amber-500 border-t-2">
                                 Our friendly team is always here to help —
                                 before, during, and after your ride.
                             </p>
