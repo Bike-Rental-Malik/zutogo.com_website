@@ -141,7 +141,6 @@
 //     );
 // }
 
-
 // components/DownloadAppSection.tsx
 import Image from "next/image";
 import logo from "../public/ChatGPT_Image_Oct_26__2025__02_51_46_PM-removebg-preview.png";
@@ -168,22 +167,20 @@ export default function DownloadAppSection() {
                 {/* Left Content (comes second on mobile) */}
                 <div className="order-2 md:order-1">
                     <h2 className="text-4xl md:text-7xl font-bold text-gray-900 mb-4">
-                        Ready to Ride or Earn?{" "}
-                        <span className="text-amber-500">Get the Zuto App</span>.
                         <TextAnimate
                             animation="blurInUp"
                             by="word"
                             className="inline-block"
                         >
-                            Why
+                            Ready to Ride or Earn?
                         </TextAnimate>{" "}
-                        <span>
+                        <span className="">
                             <TextAnimate
                                 animation="blurInUp"
                                 by="word"
                                 className="text-amber-500 inline-block"
                             >
-                                Choose Zuto
+                                Get the Zuto App.
                             </TextAnimate>
                         </span>
                     </h2>

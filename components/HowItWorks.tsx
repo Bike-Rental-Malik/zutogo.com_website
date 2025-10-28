@@ -1,6 +1,10 @@
 import Image from "next/image";
 import { DottedMap } from "../components/ui/dotted-map";
 import Coins from "../public/coin.png";
+import BookBike from "../public/book.png";
+import getVerified from "../public/getVerified.png";
+import listBike from "../public/listBike.png";
+import rideAndReturn from "../public/ride&return.png";
 import { Highlighter } from "../components/ui/highlighter";
 import { TextAnimate } from "../components/ui/text-animate";
 
@@ -132,6 +136,9 @@ export default function HowItWorks() {
                 <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
                     {/* Renters Section */}
                     <div className="flex flex-col space-y-8 z-10 w-full">
+                        <div className="md:text-3xl text-2xl text-gray-500 border-amber-500 border-b-2">
+                            Renter section
+                        </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
                             {/* Top full card */}
                             <div className="relative md:col-span-2 rounded-xl overflow-hidden shadow-lg w-full h-48 md:h-60">
@@ -149,16 +156,16 @@ export default function HowItWorks() {
 
                             {/* Bottom half cards */}
                             <div className="relative rounded-xl overflow-hidden shadow-lg w-full h-36 md:h-48">
-                                <img
-                                    src="/images/renter2.jpg"
+                                {/* <Image
+                                    src={BookBike}
                                     alt="Book instantly"
-                                    className="w-full h-full object-cover"
-                                />
+                                    className="w-full h-full object-cover blur-xs opacity-50"
+                                /> */}
                                 <div className="absolute bottom-0 left-0 p-3 rounded-tr-xl">
                                     <h4 className="text-zinc-950 text-lg md:text-3xl font-bold">
                                         Book instantly
                                     </h4>
-                                    <h4 className="text-zinc-600 text-lg md:text-2xl ">
+                                    <h4 className="text-zinc-600 text-lg md:text-2xl">
                                         Choose your preferred time and pay
                                         securely within seconds.
                                     </h4>
@@ -166,11 +173,11 @@ export default function HowItWorks() {
                             </div>
 
                             <div className="relative rounded-xl overflow-hidden shadow-lg w-full h-36 md:h-48">
-                                <img
-                                    src="/images/renter3.jpg"
+                                {/* <Image
+                                    src={rideAndReturn}
                                     alt="Ride and return"
-                                    className="w-full h-full object-cover"
-                                />
+                                    className="w-full h-full object-cover blur-xs opacity-50"
+                                /> */}
                                 <div className="absolute bottom-0 left-0 p-3 ">
                                     <h4 className="text-zinc-950 text-lg md:text-3xl font-bold">
                                         Ride and return
@@ -186,14 +193,17 @@ export default function HowItWorks() {
 
                     {/* Owners Section */}
                     <div className="flex flex-col space-y-8 z-10 w-full">
+                        <div className="md:text-3xl text-2xl text-gray-500 border-amber-500 border-b-2">
+                            Owners section
+                        </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
                             {/* Top half cards */}
                             <div className="relative rounded-xl overflow-hidden shadow-lg w-full h-36 md:h-48">
-                                <img
-                                    src="/images/owner1.jpg"
+                                {/* <Image
+                                    src={listBike}
                                     alt="List your bike"
-                                    className="w-full h-full object-cover"
-                                />
+                                    className="w-full h-full object-cover blur-xs opacity-50"
+                                /> */}
                                 <div className="absolute bottom-0 left-0 p-3">
                                     <h4 className="text-zinc-950 text-lg md:text-3xl font-bold">
                                         List your bike
@@ -206,11 +216,11 @@ export default function HowItWorks() {
                             </div>
 
                             <div className="relative rounded-xl overflow-hidden shadow-lg w-full h-36 md:h-48">
-                                <img
-                                    src="/images/owner2.jpg"
+                                {/* <Image
+                                    src={getVerified}
                                     alt="Get verified"
-                                    className="w-full h-full object-cover"
-                                />
+                                    className="w-full h-full object-cover blur-xs opacity-50"
+                                /> */}
                                 <div className="absolute bottom-0 left-0 p-3 rounded-tr-xl">
                                     <h4 className="text-zinc-950 text-lg md:text-3xl font-bold">
                                         Get verified

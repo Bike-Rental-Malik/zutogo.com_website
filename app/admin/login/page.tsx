@@ -63,7 +63,7 @@ export default function LoginForm() {
     };
 
     return (
-        <div className="flex justify-center items-center min-h-screen px-6 bg-gray-100">
+        <div className="flex justify-center items-center min-h-screen px-6 ">
             <form
                 onSubmit={step === "request" ? handleRequestOtp : handleVerifyOtp}
                 className="bg-white p-8 rounded-2xl shadow-md w-full max-w-sm"

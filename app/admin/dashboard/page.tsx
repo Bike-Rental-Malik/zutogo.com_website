@@ -26,14 +26,14 @@ export default function AdminDashboard() {
     ];
 
     return (
-        <div className="min-h-screen mt-20 bg-gray-50 p-6 md:p-10">
+        <div className="min-h-screen mt-20 p-6 md:p-10">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-6 auto-rows-[160px]">
                 {cards.map((card, idx) => (
                     <div
                         key={idx}
-                        className={`${card.color} ${card.col} flex items-center justify-center text-center rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer`}
+                        className={`${card.color} ${card.col} flex items-end pb-2 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer`}
                     >
-                        <h2 className="text-lg md:text-xl font-semibold px-3">{card.title}</h2>
+                        <h2 className="text-xl md:text-2xl font-semibold px-3 underline">{card.title} ➔</h2>
                     </div>
                 ))}
             </div>

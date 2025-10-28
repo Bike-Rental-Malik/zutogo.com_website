@@ -5,6 +5,8 @@ import FeaturesSection from "@/components/Features";
 import WhyChooseZuto from "@/components/WhyChooseZuto";
 import DownloadAppSection from "@/components/DownloadAppSection";
 import HomePage from "@/components/HomePage";
+import ContactUs from "@/components/ContactUs";
+import TestimonialsSection from "@/components/testimonials";
 
 
 export default function Home() {
@@ -20,7 +22,11 @@ export default function Home() {
 
                 <WhyChooseZuto />
 
+                <TestimonialsSection />
+
                 <DownloadAppSection />
+
+                <ContactUs />
             </div>
         </div>
     );
