@@ -1,7 +1,10 @@
 "use client";
+
 import { useState } from "react";
 import axios from "axios";
 import { useRouter } from "next/navigation";
+import { useDispatch } from "react-redux";
+import { login } from "../../../store/userSlice";
 
 export default function LoginForm() {
     const [phone, setPhone] = useState("");
@@ -10,6 +13,7 @@ export default function LoginForm() {
     const [loading, setLoading] = useState(false);
     const [message, setMessage] = useState("");
     const router = useRouter();
+    const dispatch = useDispatch();
 
     const api = process.env.NEXT_PUBLIC_AUTH_API;
 
@@ -22,7 +26,7 @@ export default function LoginForm() {
         try {
             const res = await axios.post(`${api}/admin/otp/request`, { phone });
             setMessage(res.data.message || "OTP sent successfully!");
-            
+
             // move to verify step
             setOtp(res.data.otp_for_testing || ""); // auto-fill for testing
             setStep("verify");
@@ -41,22 +45,24 @@ export default function LoginForm() {
         setMessage("");
 
         try {
-            const res = await axios.post(`${api}/admin/otp/verify`, { phone, otp });
-            setMessage(res.data.message || "OTP verified successfully!");
+            const res = await axios.post(
+                `${process.env.NEXT_PUBLIC_AUTH_API}/auth/verifyOtp`,
+                {
+                    phone,
+                    otp,
+                }
+            );
 
-            // you can handle token storage here
             if (res.data.token) {
-                localStorage.setItem("token", res.data.token);
-            }
+                const { user, token } = res.data;
+                dispatch(login({ user, token }));
 
-            if (res.data.token) {
-                localStorage.setItem("token", res.data.token);
-                // redirect to admin dashboard
+                // You don’t need to set cookie manually since server already does
                 router.push("/admin/dashboard");
             }
         } catch (err: any) {
             console.error(err);
-            setMessage(err.response?.data?.error || "Invalid or expired OTP");
+            setMessage(err.response?.data?.message || "Invalid or expired OTP");
         } finally {
             setLoading(false);
         }
@@ -65,7 +71,9 @@ export default function LoginForm() {
     return (
         <div className="flex justify-center items-center min-h-screen px-6 ">
             <form
-                onSubmit={step === "request" ? handleRequestOtp : handleVerifyOtp}
+                onSubmit={
+                    step === "request" ? handleRequestOtp : handleVerifyOtp
+                }
                 className="bg-white p-8 rounded-2xl shadow-md w-full max-w-sm"
             >
                 <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">

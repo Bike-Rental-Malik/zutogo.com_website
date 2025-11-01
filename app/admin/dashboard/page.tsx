@@ -1,10 +1,11 @@
 "use client";
+
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 
 export default function AdminDashboard() {
     const router = useRouter();
-
+    
     useEffect(() => {
         const token = localStorage.getItem("token");
         if (!token) {
@@ -21,7 +22,7 @@ export default function AdminDashboard() {
         { title: "Support Tickets", color: "bg-black text-white", col: "col-span-1 row-span-1", link:"/admin/dashboard/support" },
         { title: "Bike Verification", color: "bg-amber-500 text-black", col: "col-span-1 row-span-1", link:"/admin/dashboard/verification" },
         { title: "Analytics", color: "bg-white text-gray-900 border border-gray-200", col: "col-span-1 row-span-2", link:"/admin/dashboard/analytics" },
-        { title: "Disputes", color: "bg-black text-white", col: "col-span-1 row-span-1", link:"/admin/dashboard/disputes" },
+        { title: "Listings", color: "bg-black text-white", col: "col-span-1 row-span-1", link:"/admin/dashboard/listings" },
         { title: "System Logs", color: "bg-amber-500 text-black", col: "col-span-2 row-span-1", link:"/admin/dashboard/logs" },
     ];
 

@@ -1,3 +1,4 @@
+"use client";
 
 import { InteractiveHoverButton } from "../components/ui/interactive-hover-button";
 import HowItWorks from "@/components/HowItWorks";
@@ -8,12 +9,10 @@ import HomePage from "@/components/HomePage";
 import ContactUs from "@/components/ContactUs";
 import TestimonialsSection from "@/components/testimonials";
 
-
 export default function Home() {
     return (
         <div className="h-full w-full">
             <div className="w-full h-screen rounded-lg bg-black">
-               
                 <HomePage />
 
                 <HowItWorks />
