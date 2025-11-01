@@ -1,18 +1,6 @@
 "use client";
 
-import { useRouter } from "next/navigation";
-import { useEffect } from "react";
-
 export default function AdminDashboard() {
-    const router = useRouter();
-    
-    useEffect(() => {
-        const token = localStorage.getItem("token");
-        if (!token) {
-            router.push("/admin/login");
-        }
-    }, [router]);
-
     const cards = [
         { title: "Manage Revenue", color: "bg-amber-500 text-black", col: "col-span-2 row-span-1", link:"/admin/dashboard/revenue" },
         { title: "Approve Listings", color: "bg-white text-gray-900 border border-gray-200", col: "col-span-1 row-span-2", link:"/admin/dashboard/listings" },
