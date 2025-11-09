@@ -4,8 +4,8 @@ import { TextAnimate } from "../components/ui/text-animate";
 
 function HomePage() {
     return (
-        <div>
-            <main className="flex flex-col-reverse md:flex-row items-center justify-between min-h-screen mt-20 px-4 md:px-10 bg-white">
+        <div className="bg-white">
+            <main className="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col-reverse md:flex-row items-center justify-between min-h-screen mt-20 ">
 
                 {/* Left side: Text */}
                 <div className="flex-1 ">
