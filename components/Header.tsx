@@ -8,7 +8,7 @@ const navItems = [
     { name: "Contact", path: "/#contact" },
 ];
 
-const Logo = ({ size = 12 }) => (
+const Logo = () => (
     <Link
         href="/"
         className={`flex items-center gap-2 font-bold text-2xl sm:text-3xl`}
@@ -16,7 +16,7 @@ const Logo = ({ size = 12 }) => (
         <img
             src="/zuto-removebg-preview (1).png"
             alt="Zuto Logo"
-            className={`h-${size} w-${size} animate-spin-slow`}
+            className={`h-12 w-12 animate-spin-slow`}
         />
         <span className="text-logo-gradient text-zinc-600">Zuto</span>
     </Link>
