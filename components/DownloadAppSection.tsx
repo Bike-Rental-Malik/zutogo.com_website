@@ -6,8 +6,7 @@ import { TextAnimate } from "../components/ui/text-animate";
 export default function DownloadAppSection() {
     return (
         <section className="py-6 md:py-10">
-            <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-                {/* Right Image (comes first on mobile) */}
+            <div className="max-w-7xl mx-auto px-6 md:px-16 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
                 <div className="order-1 md:order-2 flex flex-col items-center w-full">
                     <div className="relative w-full h-[300px] md:h-[420px] flex justify-center">
                         <Image
@@ -20,7 +19,6 @@ export default function DownloadAppSection() {
                     </div>
                 </div>
 
-                {/* Left Content (comes second on mobile) */}
                 <div className="order-2 md:order-1">
                     <h2 className="text-4xl md:text-7xl font-bold text-gray-900 mb-4">
                         <TextAnimate
@@ -50,9 +48,8 @@ export default function DownloadAppSection() {
                     </p>
 
                     <div className="flex space-x-4 mb-8">
-                        {/* Google Play Button */}
                         <a
-                            href="https://play.google.com/store/apps/details?id=com.zuto.app" // replace with your app link
+                            href="https://play.google.com/store/apps/details?id=com.zuto.app" 
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center gap-2 bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-all duration-200 shadow-md hover:shadow-lg"
@@ -106,7 +103,7 @@ export default function DownloadAppSection() {
                         </a>
 
                         <a
-                            href="https://apps.apple.com/app/idYOUR_APP_ID" // replace with your app link
+                            href="https://apps.apple.com/app/idYOUR_APP_ID"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-3 bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-all duration-200 shadow-md hover:shadow-lg"

@@ -1,4 +1,4 @@
-import { TextAnimate } from "@/components/ui/text-animate"; // adjust path if needed
+import { TextAnimate } from "@/components/ui/text-animate";
 import { cn } from "@/lib/utils";
 import { Marquee } from "../components/ui/marquee";
 import user from "../public/user (1).png";
@@ -98,10 +98,9 @@ const ReviewCard = ({
 
 export default function TestimonialsSection() {
     return (
-        <section className="bg-white py-10">
-            <div className="max-w-7xl mx-auto px-6 lg:px-10 items-center text-center">
-                {/* Headline */}
-                <h2 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
+        <section id="reviews" className="bg-white py-10">
+            <div className="max-w-7xl mx-auto px-6 lg:px-16 items-center text-center">
+                <h2 className="text-4xl md:text-7xl font-bold text-gray-900 ">
                     <TextAnimate
                         animation="blurInUp"
                         by="word"
@@ -120,8 +119,7 @@ export default function TestimonialsSection() {
                     </span>
                 </h2>
 
-                {/* Subtitle */}
-                <h3 className="md:text-2xl text-xl text-zinc-500 mb-10">
+                <h3 className="md:text-2xl text-xl text-zinc-500 mb-10 mt-4">
                     <TextAnimate
                         animation="blurInUp"
                         by="word"
@@ -130,8 +128,7 @@ export default function TestimonialsSection() {
                         Real experiences from our trusted Zuto community.
                     </TextAnimate>
                 </h3>
-
-                {/* Marquee Component */}
+                
                 <div className="mt-10">
                     <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
                         <Marquee pauseOnHover className="[--duration:20s]">

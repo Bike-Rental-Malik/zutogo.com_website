@@ -1,13 +1,12 @@
 import Image from "next/image";
 import scooter from "../public/isolated-3d-scooter-icon (1).png";
-import { Highlighter } from "./ui/highlighter";
 import { TextAnimate } from "../components/ui/text-animate";
 
 export default function FeaturesSection() {
     return (
-        <section className="bg-white py-10">
-            <div className="max-w-7xl mx-auto px-6 lg:px-10">
-                <h2 className="text-5xl text-center font-bold text-gray-900 mb-4">
+        <section id="features" className="bg-white py-10">
+            <div className="max-w-7xl mx-auto px-6 lg:px-16">
+                <h2 className="text-4xl md:text-7xl text-center font-bold text-gray-900 mb-4">
                     <span className="text-amber-500">
                         <TextAnimate
                             animation="blurInUp"
@@ -94,15 +93,13 @@ export default function FeaturesSection() {
                         />
                     </div>
 
-                    {/* Right side: Text content */}
                     <div>
-                        {/* Features Grid */}
                         <div className="grid sm:grid-cols-2 gap-8">
                             <div>
-                                <h4 className="text-3xl font-bold text-gray-900 mb-2">
+                                <h4 className=" text-2xl md:text-3xl font-bold text-gray-900 mb-2">
                                     Verified Owners & Bikes
                                 </h4>
-                                <p className="text-gray-600 text-xl border-amber-500 border-t-2">
+                                <p className="text-gray-600 text-lg md:text-xl border-amber-500 border-t-2">
                                     Every bike and owner goes through identity
                                     and document verification to ensure your
                                     safety.
@@ -110,50 +107,50 @@ export default function FeaturesSection() {
                             </div>
 
                             <div>
-                                <h4 className="text-3xl font-bold text-gray-900 mb-2">
+                                <h4 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
                                     Secure Payments
                                 </h4>
-                                <p className="text-gray-600 text-xl border-amber-500 border-t-2">
+                                <p className="text-gray-600 text-lg md:text-xl border-amber-500 border-t-2">
                                     Book confidently with our in-app wallet and
                                     enjoy instant refunds on cancellations.
                                 </p>
                             </div>
 
                             <div>
-                                <h4 className="text-3xl font-bold text-gray-900 mb-2">
+                                <h4 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
                                     Real-time Tracking
                                 </h4>
-                                <p className="text-gray-600 text-xl border-amber-500 border-t-2">
+                                <p className="text-gray-600 text-lg md:text-xl border-amber-500 border-t-2">
                                     Stay informed with GPS tracking and live
                                     ride updates directly in the app.
                                 </p>
                             </div>
 
                             <div>
-                                <h4 className="text-3xl font-bold text-gray-900 mb-2">
+                                <h4 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
                                     Transparent Pricing
                                 </h4>
-                                <p className="text-gray-600 text-xl border-amber-500 border-t-2">
+                                <p className="text-gray-600 text-lg md:text-xl border-amber-500 border-t-2">
                                     No hidden charges. Pay only for the time you
                                     ride — nothing more.
                                 </p>
                             </div>
 
                             <div>
-                                <h4 className="text-3xl font-bold text-gray-900 mb-2">
+                                <h4 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
                                     Smart Suggestions
                                 </h4>
-                                <p className="text-gray-600 text-xl border-amber-500 border-t-2">
+                                <p className="text-gray-600 text-lg md:text-xl border-amber-500 border-t-2">
                                     Get personalized ride recommendations based
                                     on your habits and travel history.
                                 </p>
                             </div>
 
                             <div>
-                                <h4 className="text-3xl font-bold text-gray-900 mb-2">
+                                <h4 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
                                     Extend or Cancel Anytime
                                 </h4>
-                                <p className="text-gray-600 text-xl border-amber-500 border-t-2">
+                                <p className="text-gray-600 text-lg md:text-xl border-amber-500 border-t-2">
                                     Need more time? Extend your booking in one
                                     tap — or cancel with a full refund before
                                     your ride starts.
@@ -161,20 +158,20 @@ export default function FeaturesSection() {
                             </div>
 
                             <div>
-                                <h4 className="text-3xl font-bold text-gray-900 mb-2">
+                                <h4 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
                                     Easy Rental Process
                                 </h4>
-                                <p className="text-gray-600 text-xl border-amber-500 border-t-2">
+                                <p className="text-gray-600 text-lg md:text-xl border-amber-500 border-t-2">
                                     A smooth 3-step rental experience — find,
                                     book, and ride without any hassle.
                                 </p>
                             </div>
 
                             <div>
-                                <h4 className="text-3xl font-bold text-gray-900 mb-2">
+                                <h4 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
                                     24×7 Support
                                 </h4>
-                                <p className="text-gray-600 text-xl border-amber-500 border-t-2">
+                                <p className="text-gray-600 text-lg md:text-xl border-amber-500 border-t-2">
                                     Our friendly team is always here to help —
                                     before, during, and after your ride.
                                 </p>

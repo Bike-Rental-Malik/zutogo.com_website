@@ -1,12 +1,11 @@
-import React from "react";
 import { TextAnimate } from "./ui/text-animate";
 
 function ContactUs() {
     return (
         <div>
-            <section className="bg-white pt-20 pb-2">
-                <div className="max-w-7xl mx-auto px-6 lg:px-10 items-center text-center">
-                    <h2 className="text-5xl md:text-7xl font-bold text-gray-900 mb-4">
+            <section id="contact" className="bg-white pt-20 pb-2">
+                <div className="max-w-7xl mx-auto px-6 lg:px-16 items-center text-center">
+                    <h2 className="text-4xl md:text-7xl font-bold text-gray-900 mb-4">
                         <TextAnimate
                             animation="blurInUp"
                             by="word"
@@ -42,24 +41,25 @@ function ContactUs() {
                                 Email:
                             </span>{" "}
                             <a
-                                href="#"
+                                href="mailto:admin@zutogo.com"
                                 className="text-amber-500 hover:underline"
                             >
-                                support@zuto.com
+                                admin@zutogo.com
                             </a>
                         </p>
                         <p>
                             <span className="font-semibold text-gray-800">
                                 Office:
                             </span>{" "}
-                            Pune, India
+                            Plot No 416, Prasanth Nagar, Vanasthalipuram, Ranga
+                            Reddy District, Hyderabad, Telangana – 500070
                         </p>
                         <p>
                             <span className="font-semibold text-gray-800">
                                 Follow us:
                             </span>{" "}
                             <a
-                                href="#"
+                                href="https://www.instagram.com/zuto.go?igsh=MXJrbnpwbjQ2ZW1sYQ=="
                                 className="text-amber-500 hover:underline"
                             >
                                 Instagram
@@ -73,10 +73,10 @@ function ContactUs() {
                             </a>{" "}
                             |{" "}
                             <a
-                                href="#"
+                                href="https://www.facebook.com/share/1CqgnaBgML/"
                                 className="text-amber-500 hover:underline"
                             >
-                                Twitter
+                                Facebook
                             </a>
                         </p>
                     </div>
@@ -87,7 +87,8 @@ function ContactUs() {
                             reserved.
                         </p>
                         <p className="text-gray-500 text-sm md:text-base">
-                            Privacy Policy | Terms and Conditions | Careers | Partner with Us
+                            Privacy Policy | Terms and Conditions | Careers |
+                            Partner with Us
                         </p>
                     </div>
                 </div>

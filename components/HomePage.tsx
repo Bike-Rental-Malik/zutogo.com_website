@@ -5,9 +5,7 @@ import { TextAnimate } from "../components/ui/text-animate";
 function HomePage() {
     return (
         <div className="bg-white">
-            <main className="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col-reverse md:flex-row items-center justify-between min-h-screen mt-20 ">
-
-                {/* Left side: Text */}
+            <main className="max-w-7xl mx-auto px-6 lg:px-16 flex flex-col-reverse md:flex-row items-center justify-between min-h-screen mt-20 ">
                 <div className="flex-1 ">
                     <h1 className="md:text-8xl text-6xl font-bold mb-6 text-gray-900">
                         <TextAnimate
@@ -26,13 +24,14 @@ function HomePage() {
                         </TextAnimate>
                     </h1>
 
-                    {/* <p className="text-lg text-gray-600 mb-8">
-                            Affordable bikes for every journey — from quick errands to weekend getaways.
-                        </p> */}
+                    <p className="text-lg text-gray-600 mb-8">
+                        Affordable bikes for every journey — from quick errands
+                        to weekend getaways.
+                    </p>
                     <div className="flex gap-2">
                         <div className="flex space-x-4 mb-8">
                             <a
-                                href="https://play.google.com/store/apps/details?id=com.zuto.app" // replace with your app link
+                                href="https://play.google.com/store/apps/details?id=com.zuto.app"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex items-center gap-2 bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-all duration-200 shadow-md hover:shadow-lg"
@@ -88,7 +87,7 @@ function HomePage() {
                             </a>
 
                             <a
-                                href="https://apps.apple.com/app/idYOUR_APP_ID" // replace with your app link
+                                href="https://apps.apple.com/app/idYOUR_APP_ID"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center gap-3 bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-all duration-200 shadow-md hover:shadow-lg"
@@ -114,7 +113,6 @@ function HomePage() {
                     </div>
                 </div>
 
-                {/* Right side: Image */}
                 <div className="flex-1 flex justify-center mt-5 md:mt-0">
                     <Image
                         src={scooter}
