@@ -57,9 +57,9 @@ export default function WhyChooseZuto() {
                         your way — anytime, anywhere.
                     </p>
 
-                    <ul className="space-y-3 flex gap-5 justify-center">
-                        <li className="flex items-start">
-                            <span className="text-gray-600 px-6 py-2 rounded-full shadow-md">
+                    <ul className="space-y-3 flex flex-wrap gap-3 justify-center">
+                        <li className="flex items-start ">
+                            <span className="text-gray-600 px-6 py-2 rounded-full shadow-md ">
                                 Community-driven platform built on trust
                             </span>
                         </li>

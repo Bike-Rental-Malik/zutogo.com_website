@@ -81,15 +81,44 @@ function ContactUs() {
                         </p>
                     </div>
 
-                    <div className="mt-16 flex flex-wrap justify-between border-t border-gray-200 pt-1">
+                    <div className="mt-16 flex flex-wrap justify-between items-center border-t border-gray-200 pt-4 gap-3">
                         <p className="text-gray-500 text-sm md:text-base">
                             © {new Date().getFullYear()} Zuto. All rights
                             reserved.
                         </p>
-                        <p className="text-gray-500 text-sm md:text-base">
-                            Privacy Policy | Terms and Conditions | Careers |
-                            Partner with Us
-                        </p>
+
+                        <div className="flex flex-wrap gap-3 text-gray-500 text-sm md:text-base">
+                            <a
+                                href="/privacy-policy"
+                                className="hover:text-gray-700 hover:underline"
+                            >
+                                Privacy Policy
+                            </a>
+                            <span>|</span>
+
+                            <a
+                                href="/terms-and-conditions"
+                                className="hover:text-gray-700 hover:underline"
+                            >
+                                Terms & Conditions
+                            </a>
+                            <span>|</span>
+
+                            <a
+                                href="/careers"
+                                className="hover:text-gray-700 hover:underline"
+                            >
+                                Careers
+                            </a>
+                            <span>|</span>
+
+                            <a
+                                href="/partner"
+                                className="hover:text-gray-700 hover:underline"
+                            >
+                                Partner with Us
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>
