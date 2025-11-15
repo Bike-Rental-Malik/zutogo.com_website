@@ -11,6 +11,7 @@ export default function JoinWaitingList() {
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+        setLoading(true);
 
         if (!name.trim() || !email.trim()) {
             alert("Please enter both name and email.");
@@ -31,6 +32,9 @@ export default function JoinWaitingList() {
             } else {
                 alert("Something went wrong.");
             }
+        } finally {
+            setLoading(false);
+            setIsOpen(false);
         }
     };
 
