@@ -59,17 +59,17 @@ export default function WhyChooseZuto() {
 
                     <ul className="space-y-3 flex flex-wrap gap-3 justify-center">
                         <li className="flex items-start ">
-                            <span className="text-gray-600 px-6 py-2 rounded-full shadow-md ">
+                            <span className="text-gray-600 px-6 py-2 rounded-4xl border ">
                                 Community-driven platform built on trust
                             </span>
                         </li>
                         <li className="flex items-start">
-                            <span className="text-gray-600 px-6 py-2 rounded-full shadow-md">
+                            <span className="text-gray-600 px-6 py-2 rounded-4xl border">
                                 Owned bikes only — no shared fleets
                             </span>
                         </li>
                         <li className="flex items-start">
-                            <span className="text-gray-600 px-6 py-2 rounded-full shadow-md">
+                            <span className="text-gray-600 px-6 py-2 rounded-4xl border">
                                 Designed for convenience, safety, and freedom
                             </span>
                         </li>

@@ -66,7 +66,7 @@ function ContactUs() {
                             </a>{" "}
                             |{" "}
                             <a
-                                href="#"
+                                href="https://www.linkedin.com/in/zuto-rentals-05751a396?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
                                 className="text-amber-500 hover:underline"
                             >
                                 LinkedIn
