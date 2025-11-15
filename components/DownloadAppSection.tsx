@@ -103,7 +103,7 @@ export default function DownloadAppSection() {
                         </a>
 
                         <a
-                            href="https://apps.apple.com/app/idYOUR_APP_ID"
+                            href="https://play.google.com/store/apps/details?id=com.zuto.app"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-3 bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-all duration-200 shadow-md hover:shadow-lg"
@@ -126,6 +126,8 @@ export default function DownloadAppSection() {
                             </div>
                         </a>
                     </div>
+
+                    <p>Launching soon...</p>
 
                     <p className="text-gray-500 italic text-sm">
                         One app. Endless rides. Infinite freedom.

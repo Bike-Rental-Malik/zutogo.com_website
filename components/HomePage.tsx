@@ -1,11 +1,12 @@
 import Image from "next/image";
 import scooter from "../public/isolated-3d-scooter-icon.png";
 import { TextAnimate } from "../components/ui/text-animate";
+import { Button } from "./ui/button";
 
 function HomePage() {
     return (
         <div className="bg-white">
-            <main className="max-w-7xl mx-auto px-6 lg:px-16 flex flex-col-reverse md:flex-row items-center justify-between min-h-screen mt-20 ">
+            <main className="max-w-7xl mx-auto px-6 lg:px-16 flex flex-col-reverse md:flex-row items-center justify-between min-h-screen mt-28 ">
                 <div className="flex-1 ">
                     <h1 className="md:text-8xl text-6xl font-bold mb-6 text-gray-900">
                         <TextAnimate
@@ -87,7 +88,7 @@ function HomePage() {
                             </a>
 
                             <a
-                                href="https://apps.apple.com/app/idYOUR_APP_ID"
+                                href="https://play.google.com/store/apps/details?id=com.zuto.app"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center gap-3 bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-all duration-200 shadow-md hover:shadow-lg"

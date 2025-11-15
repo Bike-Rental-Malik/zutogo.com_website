@@ -24,8 +24,8 @@ const Logo = () => (
 
 const Header = () => {
     return (
-        <div className="w-full fixed top-0 left-0 right-0 z-50 pt-2 px-2 md:px-16">
-            <header className="  backdrop-blur-md border-[1px]  rounded-full">
+        <div className="w-full fixed top-0 left-0 right-0 z-50 pt-10 ">
+            <header className="  backdrop-blur-md border-[1px] px-2 md:px-16">
                 <div className="px-4 sm:px-7 flex h-16 items-center justify-between ">
                     <Logo />
                     <nav className="hidden md:flex items-center md:text-sm lg:text-lg gap-6">
