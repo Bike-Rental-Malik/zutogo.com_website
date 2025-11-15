@@ -39,9 +39,9 @@ export default function JoinWaitingList() {
     };
 
     return (
-        <>
+        <div className="fixed top-0 z-[9999] w-full bg-amber-500 h-10">
             {/* Top Banner */}
-            <div className="fixed top-0 z-[9999] w-full bg-amber-500 h-10 max-w-7xl mx-auto px-6 lg:px-16 flex items-center justify-between shadow">
+            <div className=" max-w-7xl mx-auto px-6 lg:px-16 h-10 flex items-center justify-between">
                 <h1 className="font-medium text-black">
                     App Launching Soon...
                 </h1>
@@ -119,6 +119,6 @@ export default function JoinWaitingList() {
                     }
                 }
             `}</style>
-        </>
+        </div>
     );
 }
